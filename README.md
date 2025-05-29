@@ -13,13 +13,13 @@ El sistema se compone de varias etapas, cada una con una función específica de
   ```
 - **Comunicación:** Transmisión de datos mediante **UART** hacia la placa Heltec LoRa 32 V3.
 
-- ### 🔹 Heltec LoRa 32 V3 – Nodo 1
+### 🔹 Heltec LoRa 32 V3 – Nodo 1
 - **Función:** Recepción del JSON vía UART, visualización en pantalla OLED, y envío inalámbrico mediante **LoRa** a un segundo nodo Heltec.
 
 ### 🔹 Heltec LoRa 32 V3 – Nodo 2
 - **Función:** Recepción de datos LoRa, visualización local, y retransmisión usando **ESP-NOW** hacia una placa LilyGO TTGO SIM7600.
 
-### 🔹 LilyGO TTGO SIM7600
+### 🔹 LilyGO TTGO SIM7070G
 - **Función:** Recepción del JSON vía ESP-NOW y posterior envío a internet mediante red móvil 3G.
 - **Protocolo utilizado:** **MQTT**, hacia el broker público [HiveMQ](https://www.hivemq.com/).
  
